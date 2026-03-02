@@ -69,11 +69,15 @@ const App = () => {
           <Route
             path="/admin"
             element={
+               {/* admin panel  
               <ProtectedRoute allowedRoles={["admin", "editor"]}>
-                <AdminHome />
+                
               </ProtectedRoute>
+              */}
+              <AdminHome />
             }
           />
+          
           <Route
             path="/admin/addpost"
             element={
