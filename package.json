@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rehan2007ahmad/blog-api.git"
+    "url": "git+https://github.com/Rehan2007ahmad/blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rehan2007ahmad/blog-api/issues"
+    "url": "https://github.com/Rehan2007ahmad/blog/issues"
   },
-  "homepage": "https://github.com/Rehan2007ahmad/blog-api#readme"
+  "homepage": "https://github.com/Rehan2007ahmad/blog#readme"
 }
