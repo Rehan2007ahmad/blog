@@ -187,16 +187,22 @@ const AdminUsers = () => {
                   </label>
                   <div className="relative">
                     <select
-                      value={selectedRole}
-                      onChange={(e) => setSelectedRole(e.target.value)}
-                      className="w-full border-none bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none cursor-pointer text-sm"
-                    >
-                      {roles.map((role) => (
-                        <option key={role} value={role}>
-                          {role}
-                        </option>
-                      ))}
-                    </select>
+  value={selectedRole}
+  onChange={(e) => {
+    setSelectedRole(e.target.value);
+    setFormData((prev) => ({
+      ...prev,
+      role: e.target.value, // ✅ this is important
+    }));
+  }}
+  className="w-full border-none bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none cursor-pointer text-sm"
+>
+  {roles.map((role) => (
+    <option key={role} value={role}>
+      {role}
+    </option>
+  ))}
+</select>
                     <i className="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
                   </div>
                 </div>
