@@ -29,6 +29,10 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+app.get('/healthz',(req,res)=>{
+    res.send("Hello");
+)}
+
 
 
 app.listen(process.env.PORT ,()=>{
