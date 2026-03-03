@@ -17,6 +17,14 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 
+app.get('/healthz', (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: Date.now()
+  });
+});
+
 app.use('/api/user', require('./routes/user.routes'))
 app.use('/api/category', require('./routes/category.routes'))
 app.use('/api/post', require('./routes/post.routes'))
@@ -29,13 +37,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get('/healthz', (req, res) => {
-  res.status(200).json({
-    status: "ok",
-    uptime: process.uptime(),
-    timestamp: Date.now()
-  });
-});
+
 
 
 app.listen(process.env.PORT ,()=>{
