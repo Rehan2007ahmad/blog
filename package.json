@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Rehan2007ahmad/blog.git"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "keywords": [],
   "author": "",
