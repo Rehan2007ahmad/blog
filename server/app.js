@@ -29,10 +29,13 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get('/healthz',(req,res)=>{
-    res.send("Hello");
-)}
-
+app.get('/healthz', (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: Date.now()
+  });
+});
 
 
 app.listen(process.env.PORT ,()=>{
