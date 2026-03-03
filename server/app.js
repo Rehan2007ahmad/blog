@@ -17,6 +17,14 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 
+mongoose.connection.on('error', (err) => {
+  console.error('Mongoose connection error:', err);
+});
+
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose connected to DB');
+});
+
 app.get('/healthz', (req, res) => {
   res.status(200).json({
     status: "ok",
