@@ -4,9 +4,9 @@
   "description": "A simple RESTful API for a blog platform, built with Node.js and Express.",
   "main": "index.js",
   "scripts": {
-    "build":"npm install --prefix server && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix server"
-  },
+  "build": "cd frontend && npm install && npm run build && cd ../server && npm install",
+  "start": "node server/app.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rehan2007ahmad/blog.git"
