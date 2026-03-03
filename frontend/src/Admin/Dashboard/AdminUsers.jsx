@@ -18,46 +18,12 @@ const AdminUsers = () => {
     lastName: "",
     email: "",
     password: "",
-    role: selectedRole,
+    role: "user",
   });
 
   const roles = ["admin", "editor", "user"];
 
-  const users = [
-    {
-      id: 1,
-      name: "Emily Thompson",
-      email: "emily.thompson@example.com",
-      role: "admin",
-      status: "active",
-      initials: "ET",
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      email: "michael.chen@example.com",
-      role: "editor",
-      status: "active",
-      initials: "MC",
-    },
-    {
-      id: 3,
-      name: "Sarah Johnson",
-      email: "sarah.johnson@example.com",
-      role: "user",
-      status: "inactive",
-      initials: "SJ",
-    },
-    {
-      id: 4,
-      name: "David Rodriguez",
-      email: "david.rodriguez@example.com",
-      role: "editor",
-      status: "active",
-      initials: "DR",
-    },
-  ];
-
+ 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -102,8 +68,9 @@ const AdminUsers = () => {
         lastName: "",
         email: "",
         password: "",
-        role: selectedRole,
+        role: "user",
       });
+       setSelectedRole("user")
       setEditingUser(null);
       setIsEditing(false);
 
