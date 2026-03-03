@@ -13,7 +13,6 @@
     "@tailwindcss/vite": "^4.1.11",
     "@uiw/react-md-editor": "^4.0.7",
     "axios": "^1.10.0",
-    "blog": "file:..",
     "dayjs": "^1.11.13",
     "js-cookie": "^3.0.5",
     "jwt-decode": "^4.0.0",
