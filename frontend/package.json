@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "@uiw/react-md-editor": "^4.0.7",
+    "@vitejs/plugin-react": "^4.5.2",
     "axios": "^1.10.0",
     "dayjs": "^1.11.13",
     "js-cookie": "^3.0.5",
@@ -30,7 +31,6 @@
     "@eslint/js": "^9.29.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
